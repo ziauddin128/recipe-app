@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./output.css" rel="stylesheet">
+</head>
+<body>
+
+<h1 class="text-center text-4xl font-medium text-white mt-8 mb-5">Find Best Recipe</h1>
+
+<div class="px-2">
+    <div class="bg-white p-2 rounded-xl max-w-2xl mx-auto flex items-center gap-2">
+        <input type="text" placeholder="Ex: Chicken..." name="" id="search_input" class="w-full border-0 outline-none shadow-none p-2 text-md">
+        <button class="cmn_btn search_btn">Search</button>
+    </div>
+</div>
+
+
+<div id="container-wrapper" class="border border-gray-400 min-h-[600px] p-4 mx-3 rounded-xl mt-5">
+    
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 meal_container">
+
+      <!-- dynamically coming from API -->
+
+    </div>
+
+</div>
+
+<!-- popup -->
+<section class="fixed top-0 left-0 right-0 bg-[linear-gradient(0,0,0,1)] z-50 h-full w-full details_popup hidden justify-center items-center px-5">
+   <div class="details_popup_in bg-white rounded-xl w-[100%] md:w-[80%] lg:w-[60%] p-5">
+
+
+   </div>
+</section>
+
+<!-- app JS -->
+<script src="app.js"></script>
+</body>
+</html>
